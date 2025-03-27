@@ -26,7 +26,7 @@ async function FetchNft(){
         console.log(responce.raw)
     }catch(err){
         console.log(err)
-    }
+    }l
 }
 
 FetchNft()
