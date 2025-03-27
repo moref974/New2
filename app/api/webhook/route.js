@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
+    console.log("WebHook Recieved ")
     const body = await req.json(); 
     console.log("📩 New Event Received:", body);
 

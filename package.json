@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "type": "module",
   "dependencies": {
     "@moralisweb3/common-evm-utils": "^2.27.2",
     "moralis": "^2.27.2",
@@ -15,4 +16,5 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
+  
 }
