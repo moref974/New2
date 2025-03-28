@@ -2,12 +2,13 @@ import { NextResponse } from "next/server"
 
 export async function POST(req) {
   try {
-    console.log("WebHook Recieved Done")
+    console.log("✅ WebHook Received!")
     const body = await req.json()
-    console.log("📩 New Event Received:", body)
+    console.log("📩 New Event Received:",JSON.stringify(body, null, 2))
 
     return NextResponse.json({ success: true }, { status: 200 })
   } catch (error) {
+    console.error("❌ Webhook Error:", error.message) 
     return NextResponse.json({ success: false, error: error.message }, { status: 500 })
   }
 }
